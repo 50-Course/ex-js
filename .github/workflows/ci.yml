@@ -14,5 +14,10 @@ jobs:
         with:
           node-version: '18.2'
       - run: npm install .
-      - run: npm run test
+      - run: npm run test --coverage
+      - name: Upload results to code coverage 
+        uses: codecov/codecov-action@v3
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+
 
