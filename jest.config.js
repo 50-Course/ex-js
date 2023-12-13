@@ -1,6 +1,6 @@
 module.exports = {
   collectCoverage: true,
   coverageDirectory: 'coverage',
-  coverageReporters: ['text', 'html'],
+  coverageReporters: ['clover', 'json', 'lcov', ['text', { skipFull: true }]],
   testEnvironment: 'node',
 }
