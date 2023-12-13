@@ -1,3 +1,4 @@
+![Codecov](https://img.shields.io/codecov/c/github/50-Course/ex-js)
 
 # exampe-js
 
